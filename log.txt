@@ -1,0 +1,11 @@
+abctest.js:114 [no stack test] >> "Log" 
+test.js:115 [no stack test] >> "A string" 
+test.js:116 [no stack test] >> "A manipulated string (apple) with number: 42" 
+test.js:117 [no stack test] >> 1 
+test.js:118 [no stack test] >> true 
+test.js:119 [no stack test] >>  
+{
+  "me": 1
+} 
+test.js:120 [no stack test] >> [1,2,3] 
+test.js:121 [no stack test] >> "" 
