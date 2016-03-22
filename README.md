@@ -25,12 +25,13 @@ Drum role please...
 ## Get Started
 
 Use NPM to install 	`npm install graceful-console --save`
-Then require graceful console 
+
+Last step:
+
 ```javascript
 var _Console = require('graceful-console');
 var console = new _Console();
 ```
-Your all set!
 
 ## API Reference
 
@@ -42,10 +43,10 @@ Takes a string `str` as the console tag. Takes an options object `opts`.
 
 `opts` Choose the console options: write path, stack, time, and/or lvl. 
 
-+ `write` path dictates where console should output a log file too.
-+ `stack` dictates weather to show line numbers and file paths. *this is resource intensive, dont enable in production*
-+ `time` dictates weather to show a time stamp. `lvl` dictates the console log level. 
-+ `lvl` dictates how much information you want console to print: do you want to print all console messages or just errors? (**hierarchy** `_Console.ERROR || _Console.CRITICAL << _Console.WARN << _Console.ALL || _Console.INFO`)
++ `write` path dictates where console should output a console log file too.
++ `stack` dictates weather or not to show line numbers and file names. **This is resource intensive. Dont enable in production.**
++ `time` dictates weather or not to show a time stamp.
++ `lvl` dictates how much information you want console to print: do you want to print all console messages or just errors? (`_Console.ERROR || _Console.CRITICAL << _Console.WARN << _Console.ALL || _Console.INFO`)
 
 ```javascript
 	console = new _Console('No Stack Test', 
@@ -56,20 +57,21 @@ Takes a string `str` as the console tag. Takes an options object `opts`.
 			lvl: _Console.ERROR // default _Console.ALL
 		});
 ```
-```
-###console.log(str), console.error(str), console.info(str), console.warn(str)
-Takes a string `str` as the output tag.
 
-`str` prints to stdout with newline. Eats the current options such as tag and sort.
+###console.log(str), console.error(str), console.info(str), console.warn(str)
+
+Takes a string `str` as the output tag. Prints `str`  to stdout with newline. Eats the current options such as tag and sort.
 
 ```javascript
-	console.tag('test').log('the frog jumped the boat');
+	console.log('I have a frog.');
+	console.info('He is there.');
+	console.warn('The frog might jump the boat.');
+	console.error('The frog jumped the boat.');
+	console.critical('The frog did not die.');
 ```
 ###console.tag(str)
 
-Takes a string `str` as the output tag.
-
-`str` the **next** log, error, warn, info will be tagged with the str
+Takes a string `str` as the output tag. The next log, error, warn, info will be tagged with the `str`.
 
 ```javascript
 	console.tag('test').log('the frog jumped the boat');
@@ -77,9 +79,7 @@ Takes a string `str` as the output tag.
 
 ###console.sort(arg)
 
-Takes a function or a boolean `arg`.
-
-`str` the **next** log, error, warn, info array or object will be sorted.
+Takes a function or a boolean `arg`. The next log, error, warn, info will be sorted.
 
 ```javascript
 	console.tag('Sort Test Array').sort(true).log([1, 3, 2]);
@@ -90,7 +90,6 @@ Takes a function or a boolean `arg`.
 ###console.dir, console.assert, console.time, console.timeEnd
 
 Refer to Node documentation for behavior https://nodejs.org/api/console.html#console_console_log_data
-
 
 ## License
 
