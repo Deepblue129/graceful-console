@@ -1,6 +1,6 @@
 {
   "name": "graceful-console",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dectorator console module that adds color functionality, formatting, sorting, etc..  ",
   "main": "index.js",
   "scripts": {

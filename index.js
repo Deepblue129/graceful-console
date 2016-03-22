@@ -91,7 +91,7 @@ function getStack() {
         i++;
         s = stacklist[i];
         sp = stackReg.exec(s) || stackReg2.exec(s);
-    } while (data.path.indexOf('debug\\index.js') !== -1 && s);
+    } while (data.path.indexOf(__filename) !== -1 && s);
 
     return data;
 }

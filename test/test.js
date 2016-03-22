@@ -18,7 +18,7 @@
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 // DEALINGS IN THE SOFTWARE.
 
-var _Console = require('./index.js'),
+var _Console = require('./../index.js'),
     path = require('path'),
     console = new _Console('Generic tests');
 console.log(JSON.stringify(console));
