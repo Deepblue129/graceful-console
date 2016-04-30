@@ -1,5 +1,4 @@
-# scribe
-
+# graceful-console
 
 ## Synopsis
 
@@ -11,7 +10,7 @@ The new console gives you more control. More colors. Line Numbers. Sorting. Etc.
 
 ```javascript
 // Set a global variable called scribe
-global.scribe = require('scribe');
+global.scribe = require('graceful-console');
 
 // Use the global instance to log
 scribe.tag('test').log('the frog jumped the boat');
@@ -25,12 +24,12 @@ Drum role please...
 
 ## Get Started
 
-Use NPM to install 	`npm install scribe --save`
+Use NPM to install 	`npm install graceful-console --save`
 
 Last step:
 
 ```javascript
-global.scribe = require('scribe');
+global.scribe = require('graceful-console');
 ```
 
 ## API Reference

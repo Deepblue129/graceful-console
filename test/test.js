@@ -21,7 +21,7 @@
 'use strict';
 
 let path = require('path');
-global.scribe = require('./../index.js');
+global.console = require('./../index.js');
 
 scribe.break();
 
