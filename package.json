@@ -1,14 +1,14 @@
 {
-  "name": "graceful-console",
-  "version": "0.0.3",
+  "name": "scribe",
+  "version": "0.5.0",
   "description": "Dectorator console module that adds color functionality, formatting, sorting, etc..  ",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test/test.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Deepblue129/graceful-console.git"
+    "url": "git+https://github.com/Deepblue129/scribe.git"
   },
   "keywords": [
     "node",
@@ -17,9 +17,9 @@
   "author": "Michael Petrochuk <petrochukm@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Deepblue129/graceful-console/issues"
+    "url": "https://github.com/Deepblue129/scribe/issues"
   },
-  "homepage": "https://github.com/Deepblue129/graceful-console#readme",
+  "homepage": "https://github.com/Deepblue129/scribe#readme",
   "dependencies": {
     "chalk": "^1.1.1",
     "clone": "^1.0.2",
