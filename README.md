@@ -40,14 +40,14 @@ Settings sets these options till they are unset. Options sets these options for 
 
 `opts` Choose the scribe options: write path, stack, time, and/or lvl. 
 
-+ `write` path dictates where scribe should output a scribe log file too.
-+ `isStack` dictates weather or not to show line numbers and file names. **This is resource intensive. Dont enable in production.**
-+ `isTime` dictates weather or not to show a time stamp.
-+ `maxLvl` dictates how much information you want scribe to print: do you want to print all scribe messages or just errors? (`scribe.ERROR || scribe.CRITICAL << scribe.WARN << scribe.ALL || scribe.INFO`)
-+ `label` **For advanced users!** Instead use the alias scribe#warn, scribe#error, scribe#info, and scribe#critical.
-+ `lvl` **For advanced users!** Instead use the alias scribe#warn, scribe#error, scribe#info, and scribe#critical.
-+ `sort` **Do not use!** Instead use the alias scribe#sort.
-+ `tag` **Do not use!** Instead use the alias scribe#tag.
++ `write`: path dictates where scribe should output a scribe log file too.
++ `isStack`: dictates weather or not to show line numbers and file names. **This is resource intensive. Dont enable in production.**
++ `isTime`: dictates weather or not to show a time stamp.
++ `maxLvl`: dictates how much information you want scribe to print: do you want to print all scribe messages or just errors? (`scribe.ERROR || scribe.CRITICAL << scribe.WARN << scribe.ALL || scribe.INFO`)
++ `label`: **For advanced users!** Instead use the alias scribe#warn, scribe#error, scribe#info, and scribe#critical.
++ `lvl`: **For advanced users!** Instead use the alias scribe#warn, scribe#error, scribe#info, and scribe#critical.
++ `sort`: **Do not use!** Instead use the alias scribe#sort.
++ `tag`: **Do not use!** Instead use the alias scribe#tag.
 
 ###scribe.log(str), scribe.error(str), scribe.info(str), scribe.warn(str), scribe.critical(str)
 
