@@ -127,7 +127,7 @@ class Log {
         }
 
         if (label.text) {
-            out.concat(new ColorString().concat('#').concat(label.text, ColorString[label.color]) + ' ');
+            out.concat(new ColorString('#').concat(label.text + ' ', ColorString[label.color]));
         }
     }
 
