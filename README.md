@@ -7,7 +7,7 @@ Decorator console module that adds color, formatting, sorting, etc.. to the node
 
 ## Code Example
 
-The new scribe gives you more control. More colors. Line Numbers. Sorting. Etc... Contribute!
+The new console gives you more control. More colors. Line Numbers. Sorting. Etc... Contribute!
 
 ```javascript
 // Set a global variable called scribe
